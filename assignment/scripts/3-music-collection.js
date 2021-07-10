@@ -15,11 +15,11 @@ function addToCollection(title, artist, yearPublished) {
 } //end addToCollection
 
 //testing addToCollection
-addToCollection('The White Album', 'The Beatles', '1968');
-addToCollection('Abbey Road', 'The Beatles', '1969');
 addToCollection('The Miseducation of Lauryn Hill', 'Lauryn Hill', '1998');
+addToCollection('The White Album', 'The Beatles', '1968');
 addToCollection('In The Wee Small Hours', 'Frank Sinatra', '1955');
 addToCollection('Crash', 'Dave Matthews Band', '1996');
+addToCollection('Abbey Road', 'The Beatles', '1969');
 addToCollection('License to Ill', 'Beastie Boys', '1986');
 addToCollection('Monk\'s Dream', 'The Thelonius Monk Quartet', '1963');
 console.log(collection);
@@ -40,12 +40,10 @@ function findByArtist (artist) {
   let results = [ ];
   for (let item of collection){
     if (item.artist === artist) {
-      results.push(item.artist);
-      return results;
-    } else {
-      return results;
+      results.push(item);
     }
   }
+  return results;
 } // end findByArtist
 
 //testing findByArtist
