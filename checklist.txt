@@ -1,0 +1,33 @@
+[ ] create collection variable (array)
+[ ] create addToCollection function
+  [ ] title, artist, yearPublished as inputs
+  [ ] creates new object
+  [ ] add new object to the collection array
+  [ ] returns newly created object
+[ ] test addToCollection function by adding each album and logging them
+[ ] log the collection
+[ ] create showCollection function
+  [ ] array should be input parameter
+  [ ] log the number of items in the array
+  [ ] loop over the array and log each album's information in the given format
+[ ] create findByArtist function
+  [ ] input parameter is 'artist' (string)
+  [ ] create an empty array to hold the result
+  [ ] loop through collection and add items with matching 'artist'
+  [ ] return array with matching results
+  [ ] return 'results not found' message if no matching results
+  [ ] function with artist that is and isn't in the collection
+
+[ ] STRETCH GOALS
+[ ] create search function
+  [ ] input parameter should search artist and year
+  [ ] return a new collection array with results that match all criteria
+  [ ] if no results match return empty array
+  [ ] if now search object is input, return the whole collection
+[ ] add tracks array to album objects
+[ ] each track should have name and duration
+[ ] update addToCollection
+[ ] update search
+[ ] update showCollection
+
+[ ] make sure all code is being tested
