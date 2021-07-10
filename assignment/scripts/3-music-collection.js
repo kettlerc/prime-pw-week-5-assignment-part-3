@@ -16,6 +16,7 @@ function addToCollection(title, artist, yearPublished) {
 
 //testing addToCollection
 addToCollection('The White Album', 'The Beatles', '1968');
+addToCollection('Abbey Road', 'The Beatles', '1969');
 addToCollection('The Miseducation of Lauryn Hill', 'Lauryn Hill', '1998');
 addToCollection('In The Wee Small Hours', 'Frank Sinatra', '1955');
 addToCollection('Crash', 'Dave Matthews Band', '1996');
@@ -33,3 +34,20 @@ function showCollection (array) {
 
 //testing showCollection
 showCollection(collection);
+
+//findByArtist function
+function findByArtist (artist) {
+  let results = [ ];
+  for (let item of collection){
+    if (item.artist === artist) {
+      results.push(item.artist);
+      return results;
+    } else {
+      return results;
+    }
+  }
+} // end findByArtist
+
+//testing findByArtist
+console.log(findByArtist('The Beatles'));
+console.log(findByArtist('Pitbull'));

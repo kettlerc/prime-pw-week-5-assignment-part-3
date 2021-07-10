@@ -6,10 +6,10 @@
   [X] returns newly created object
 [X] test addToCollection function by adding each album and logging them
 [X] log the collection
-[ ] create showCollection function
-  [ ] array should be input parameter
-  [ ] log the number of items in the array
-  [ ] loop over the array and log each album's information in the given format
+[X] create showCollection function
+  [X] array should be input parameter
+  [X] log the number of items in the array
+  [X] loop over the array and log each album's information in the given format
 [ ] create findByArtist function
   [ ] input parameter is 'artist' (string)
   [ ] create an empty array to hold the result
