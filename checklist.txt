@@ -1,4 +1,4 @@
-[ ] create collection variable (array)
+[X] create collection variable (array)
 [ ] create addToCollection function
   [ ] title, artist, yearPublished as inputs
   [ ] creates new object
