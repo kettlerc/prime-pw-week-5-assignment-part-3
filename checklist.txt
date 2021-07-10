@@ -1,11 +1,11 @@
 [X] create collection variable (array)
-[ ] create addToCollection function
-  [ ] title, artist, yearPublished as inputs
-  [ ] creates new object
-  [ ] add new object to the collection array
-  [ ] returns newly created object
-[ ] test addToCollection function by adding each album and logging them
-[ ] log the collection
+[X] create addToCollection function
+  [X] title, artist, yearPublished as inputs
+  [X] creates new object
+  [X] add new object to the collection array
+  [X] returns newly created object
+[X] test addToCollection function by adding each album and logging them
+[X] log the collection
 [ ] create showCollection function
   [ ] array should be input parameter
   [ ] log the number of items in the array
