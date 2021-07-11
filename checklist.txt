@@ -23,7 +23,7 @@
   [X] input parameter should search artist and year
   [X] return a new collection array with results that match all criteria
   [X] if no results match return empty array
-  [ ] if no search object is input, return the whole collection
+  [X] if no search object is input, return the whole collection
 [ ] add tracks array to album objects
 [ ] each track should have name and duration
 [ ] update addToCollection

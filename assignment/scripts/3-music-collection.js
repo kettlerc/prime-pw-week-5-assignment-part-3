@@ -8,7 +8,7 @@ function addToCollection(title, artist, yearPublished) {
   let album = {
     title: title,
     artist: artist,
-    yearPublished: yearPublished
+    yearPublished: yearPublished,
   };
   collection.push(album);
   return album;
@@ -57,16 +57,22 @@ function search (artist, year) {
   console.log('Searching for: ' + artist + ' ' + year);
   let results = [ ];
   for (let item of collection) {
-    if (item.artist === '' && item.yearPublished === '') {
-      return collection;
-    } else if (item.artist === artist && item.yearPublished === year) {
+    if (item.artist === artist && item.yearPublished === year) {
       results.push(item);
+    } else if (artist === undefined && year === undefined) {
+    console.log('You did not search for anything. Here is the collection you can search:');
+    return collection;
     }
   }
   return results;
 } //end search function
 
 //testing search function
+//both arguments meet criteria
 console.log(search('Frank Sinatra', '1955'));
+//artist argument meets the criteria, year does not
 console.log(search('Dave Matthews Band', '1682'));
+// year argument meets criteria, artist does not
+console.log(search('Celine Dion', '1986'));
+//no arguments passed through
 console.log(search());
