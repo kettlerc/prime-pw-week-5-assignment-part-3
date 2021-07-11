@@ -30,13 +30,14 @@ function showCollection (array) {
   for (let albums of collection) {
     console.log(albums.title + ' by ' + albums.artist + ', published in ' + albums.yearPublished);
   }
-}// end showCollection
+}//end showCollection
 
 //testing showCollection
 showCollection(collection);
 
 //findByArtist function
 function findByArtist (artist) {
+  console.log('Search for ' + artist + ':');
   let results = [ ];
   for (let item of collection){
     if (item.artist === artist) {
@@ -44,8 +45,28 @@ function findByArtist (artist) {
     }
   }
   return results;
-} // end findByArtist
+} //end findByArtist
 
-//testing findByArtist
+//testing findByArtist with an artist that is in the collection and one that isn't
+//you would NEVER find Pitbull in my music collection hahaha
 console.log(findByArtist('The Beatles'));
 console.log(findByArtist('Pitbull'));
+
+//search function
+function search (artist, year) {
+  console.log('Searching for: ' + artist + ' ' + year);
+  let results = [ ];
+  for (let item of collection) {
+    if (item.artist === '' && item.yearPublished === '') {
+      return collection;
+    } else if (item.artist === artist && item.yearPublished === year) {
+      results.push(item);
+    }
+  }
+  return results;
+} //end search function
+
+//testing search function
+console.log(search('Frank Sinatra', '1955'));
+console.log(search('Dave Matthews Band', '1682'));
+console.log(search());
